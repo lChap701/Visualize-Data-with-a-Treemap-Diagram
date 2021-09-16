@@ -1,0 +1,70 @@
+/* global */
+body {
+  font-family: "Raleway", sans-serif;
+}
+
+foreignObject {
+  pointer-events: none;
+  * {
+    pointer-events: none;
+  }
+}
+
+svg {
+  display: block;
+  margin: auto;
+}
+
+/* query-container */
+#query-container {
+  display: flex;
+  justify-content: center;
+  padding: 15px;
+
+  a {
+    margin-right: 25px;
+    font-size: 1.25em;
+  }
+}
+
+/* tree-map */
+#tree-map {
+  padding: 10px;
+  overflow: auto;
+
+  svg.games {
+    * {
+      font-family: "Press Start 2P", cursive;
+      font-size: 0.8em;
+    }
+  }
+
+  svg.movies {
+    * {
+      font-family: "Playfair Display", serif;
+      font-size: 0.9em;
+    }
+  }
+
+  svg.kickstarter {
+    * {
+      font-family: "Montserrat", sans-serif;
+      font-size: 0.9em;
+    }
+  }
+}
+
+/* tooltip */
+#tooltip {
+  font-size: 0.9em;
+  position: absolute;
+  background: #000;
+  pointer-events: none; 
+  text-align: center;
+  padding: 0.5em;
+  opacity: 0;
+  
+  p {
+    margin: 0;
+  }
+}
